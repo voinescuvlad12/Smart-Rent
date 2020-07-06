@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en" xmlns:th="http://www.thymeleaf.org">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <title>SmartRent|About Us</title>
+
+
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
+          integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.4.1/css/all.css">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/select2/4.0.7/css/select2.min.css" rel="stylesheet"/>
+    <link th:href="@{/css/style.css}" href="/static/css/style.css" rel="stylesheet" type="text/css"/>
+
+    <style>
+        .d-flex{
+            margin-top: 200px;
+        }
+    </style>
+</head>
+<body>
+
+<div th:insert="~{/fragments/header :: header}"></div>
+<div class="custom1 d-flex flex-column sticky-footer-wrapper">
+    <div class="custom2 container flex-fill">
+        <section class="mb-4">
+            <div class="col-md-12">
+                <div class="row about_content" style="margin-top: 5%">
+                    <div class="col-md-6">
+                        <h2 class="h1-responsive font-weight-bold text-center my-4">About us</h2>
+                        <p class="text-center w-responsive mx-auto mb-5">
+                            Seeing new places, gaining new experiences and interacting with different types of cultures
+                            around the world are remarkable experiences for most people. We are the ones who bring these
+                            experiences closer to you by collaborating with hosts around the world so that you can be a
+                            plane away from the desired vacation!
+                        </p>
+
+                    </div>
+                    <div class="col-md-6">
+                        <img src="https://fitness-nation.ro/wp-content/uploads/2020/03/HOT-TRAVEL.jpg"
+                             class="img-fluid one-image" alt="plane">
+                    </div>
+                </div>
+            </div>
+        </section>
+
+
+        <div class="text-center">
+            <a th:href="@{/contact}" style="border-radius: 5px; margin-top: 3%" class="btn btn-primary btn-lg active">Contact
+                us</a>
+        </div>
+    </div>
+</div>
+<div th:insert="~{/fragments/footer :: footer}"></div>
+
+
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"
+        integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM"
+        crossorigin="anonymous"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/select2/4.0.7/js/select2.min.js"></script>
+
+
+</body>
+</html>
